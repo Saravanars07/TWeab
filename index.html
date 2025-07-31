@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Nirvana - Premium Tea Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="styles/images/Ico.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/index.css">
+</head>
+<body>
+<!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="tea-cup">
+            <div class="cup"></div>
+            <div class="steam"></div>
+            <div class="steam"></div>
+            <div class="steam"></div>
+        </div>
+        <div class="loading-text">Brewing your experience</div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo"><i class="fas fa-mug-hot"></i> Chai Nirvana</a>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" style="display: none;"></span>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Page Navigation -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-item" data-section="home">
+            <span class="tooltip">Home</span>
+        </div>
+        <div class="page-nav-item" data-section="about">
+            <span class="tooltip">About</span>
+        </div>
+        <div class="page-nav-item" data-section="products">
+            <span class="tooltip">Products</span>
+        </div>
+        <div class="page-nav-item" data-section="featured">
+            <span class="tooltip">Featured</span>
+        </div>
+        <div class="page-nav-item" data-section="testimonials">
+            <span class="tooltip">Testimonials</span>
+        </div>
+        <div class="page-nav-item" data-section="cta">
+            <span class="tooltip">Join Us</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-tea-leaves" id="teaLeaves"></div>
+        <div class="hero-content">
+            <h1>Discover Tea Enlightenment</h1>
+            <p>Each cup is a journey through centuries of tradition, crafted with the finest leaves and aromatic spices to awaken your senses and soothe your soul.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="cta-button">Explore Menu</a>
+                <a href="#" class="cta-button" style="background-color: transparent; color: var(--primary); border: 2px solid var(--primary);">Visit Store</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="steam-animation">
+
+                <a href=""><img src="styles/images/Tea.jpeg" alt="Tea Products" usemap="#tea-map"></a>
+                <map name="tea-map">
+                    <!-- Ice Cube Area -->
+                    <area 
+                        shape="poly" 
+                        coords="68,465,100,435,146,461,175,443,212,409,252,444,221,472,276,471,282,509,244,515,294,562,272,597,192,571,135,551" 
+                        href="ice-products.html" 
+                        alt="Ice Cube Products"
+                        title="Explore our ice cube products">
+                        
+                    <!-- Coffee Area -->
+                    <area 
+                        shape="poly" 
+                        coords="25,359,42,363,58,413,46,462,57,506,86,535,105,549,130,578,128,592,111,597,41,579,33,524,25,469,23,367" 
+                        href="coffee-products.html" 
+                        alt="Coffee Products"
+                        title="Discover our coffee selection">
+                        
+                    <!-- Lemon Area -->
+                    <area 
+                        shape="poly" 
+                        coords="343,567,305,522,304,485,313,458,328,442,353,426,375,397,380,378,391,361,415,341,443,331,465,336,496,348,515,385,521,406,521,430,514,443,578,431,582,447,586,477,582,506,562,531,544,550,511,555,487,557,477,555,430,556,404,571,375,577" 
+                        href="lemon-products.html" 
+                        alt="Lemon Infusions"
+                        title="Try our lemon-infused teas">
+                        
+                    <!-- Tea Leaves Area -->
+                    <area 
+                        shape="poly" 
+                        coords="171,216,121,223,74,197,38,154,37,100,57,64,90,38,161,32,212,64,230,129,217,172" 
+                        href="tea-leaves.html" 
+                        alt="Premium Tea Leaves"
+                        title="Browse our premium tea leaves">
+                    </map>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title" id="aboutTitle">Our Tea Philosophy</h2>
+        <div class="about-content">
+            <div class="about-image" id="aboutImage">
+                <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80" alt="Tea Preparation">
+            </div>
+            <div class="about-text" id="aboutText">
+                <h3>Ancient Wisdom in Every Sip</h3>
+                <p>Born from the misty hills of Darjeeling and the bustling chai stalls of Mumbai, Chai Nirvana represents the perfect harmony of tradition and innovation. Our master blender, with 30 years of experience, personally selects each ingredient.</p>
+                <p>We don't just serve tea - we curate experiences. From the temperature of the water to the precise steeping time, every detail is perfected to unlock the full potential of our premium tea leaves and spices.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat1">0</div>
+                        <div class="stat-label">Tea Varieties</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat2">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat3">0</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2 class="section-title" id="productsTitle">Our Artisanal Collection</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 50px;">Each blend tells a story - explore our signature creations that have delighted tea enthusiasts worldwide.</p>
+        <div class="products-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Masala Chai">
+                    <div class="product-badge">Best Seller</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Royal Masala Chai</h3>
+                    <p class="product-description">Our award-winning blend with 12 handpicked spices including rare long pepper and vanilla-infused cardamom for unparalleled depth.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹299</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kashmiri Kahwa">
+                    <div class="product-badge">Seasonal</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Kashmiri Saffron Kahwa</h3>
+                    <p class="product-description">Premium green tea with handpicked saffron strands, Himalayan almonds, and a whisper of rose petals.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹499</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tulsi Ginger Tea">
+                    <div class="product-badge">Immunity+</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sacred Tulsi Ginger</h3>
+                    <p class="product-description">Organic holy basil combined with fresh ginger and a touch of black pepper for vitality and wellness.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹349</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Rose Cardamom Chai">
+                    <div class="product-badge">New</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Rose Petal Cardamom Elixir</h3>
+                    <p class="product-description">Delicate Darjeeling tea with edible rose petals and freshly ground cardamom for a floral indulgence.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹449</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add these product cards to your existing products-container div -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Earl Grey">
+                    <div class="product-badge">Classic</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Imperial Earl Grey</h3>
+                    <p class="product-description">Premium black tea infused with oil of bergamot and delicate cornflower petals for a timeless classic with citrusy notes.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹379</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Matcha">
+                    <div class="product-badge">Energy Boost</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Ceremonial Matcha</h3>
+                    <p class="product-description">Stone-ground Japanese green tea powder with vibrant color and umami flavor, perfect for traditional preparation.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹599</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chamomile">
+                    <div class="product-badge">Relaxation</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Golden Chamomile</h3>
+                    <p class="product-description">Hand-picked Egyptian chamomile flowers with notes of honey and apple, naturally caffeine-free for evening relaxation.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹329</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Jasmine">
+                    <div class="product-badge">Floral</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Moonlight Jasmine</h3>
+                    <p class="product-description">Green tea scented with fresh jasmine blossoms under moonlight for seven consecutive nights to achieve perfect floral balance.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹459</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add these new product cards inside your products-container div -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1515825838458-f2a94b20105a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="Honey Lemon Ginseng">
+                    <div class="product-badge">Immunity+</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Honey Lemon Ginseng</h3>
+                    <p class="product-description">A revitalizing blend of organic honey, zesty lemon, and premium Korean ginseng for immune support and natural energy.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹399</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1512036666432-2181c1f26420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Turmeric Sunrise">
+                    <div class="product-badge">Anti-Inflammatory</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Turmeric Sunrise</h3>
+                    <p class="product-description">Golden turmeric blended with black pepper and ginger for enhanced absorption and powerful anti-inflammatory benefits.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹359</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Peppermint Bliss">
+                    <div class="product-badge">Digestive</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Peppermint Bliss</h3>
+                    <p class="product-description">Pure organic peppermint leaves for digestive comfort and refreshing flavor. Naturally caffeine-free and soothing.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹279</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="White Peach Oolong">
+                    <div class="product-badge">Limited Edition</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">White Peach Oolong</h3>
+                    <p class="product-description">Premium Taiwanese oolong tea delicately scented with white peach for a fruity, floral experience with each sip.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹549</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Product -->
+    <section class="featured-product" id="featured">
+        <div class="featured-container">
+            <div class="featured-image" id="featuredImage">
+                <img src="styles/images/Singtea.jpg" alt="Signature Masala Chai">
+            </div>
+            <div class="featured-content" id="featuredContent">
+                <span class="featured-tag">Master's Reserve</span>
+                <h2 class="featured-title">Himalayan Golden Chai</h2>
+                <p class="featured-description">Our most exquisite creation yet, featuring rare first-flush Darjeeling leaves aged with Himalayan wild honeycomb, blended with 15 handpicked spices including black cardamom and star anise. Each batch is personally prepared by our master blender using water from natural mountain springs.</p>
+                <div class="featured-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fas fa-mountain"></i></div>
+                        <div>First-flush Darjeeling leaves from 5,000ft elevation</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fas fa-spa"></i></div>
+                        <div>Wild-harvested spices from Himalayan foothills</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon"><i class="fas fa-certificate"></i></div>
+                        <div>Limited to 100 batches annually</div>
+                    </div>
+                </div>
+                <div class="featured-price">₹899 <span style="font-size: 1rem; color: var(--dark); opacity: 0.7;">per serving</span></div>
+                <div class="hero-buttons">
+                    <a href="#" class="cta-button">Reserve Now</a>
+                    <a href="#" class="cta-button" style="background-color: transparent; color: var(--primary); border: 2px solid var(--primary);">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title" id="testimonialsTitle">Voices of Delight</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"I've traveled across India tasting chai, but nothing compares to Chai Nirvana's Royal Masala blend. The complexity of flavors is extraordinary - I detected notes of vanilla, black pepper, and something wonderfully floral. It's become my daily ritual."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Priya Patel">
+                    </div>
+                    <div>
+                        <div class="author-name">Priya Patel</div>
+                        <div class="author-title">Tea Sommelier</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"The Himalayan Golden Chai is worth every penny of its premium price. The honeyed aroma alone transports me to mountain valleys. I served it at my dinner party and guests couldn't stop raving - we went through two pots!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Chen">
+                    </div>
+                    <div>
+                        <div class="author-name">David Chen</div>
+                        <div class="author-title">Food Critic</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"As someone who doesn't usually like chai (too spicy for me), the Rose Petal Cardamom Elixir was a revelation. Fragrant, subtly sweet, and so soothing. I'm officially converted and now order their monthly subscription box."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Wilson">
+                    </div>
+                    <div>
+                        <div class="author-name">Emily Wilson</div>
+                        <div class="author-title">New Convert</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="floating-bubbles" id="bubbles"></div>
+        <h2 class="section-title">Begin Your Tea Journey</h2>
+        <div class="cta-content">
+            <p>Join our exclusive tea community and receive a complimentary tasting session with your first order. Members get early access to limited editions, personalized blending sessions, and invitations to our secret tea ceremonies.</p>
+        </div>
+        <div class="cta-buttons">
+            <a href="#" class="cta-button">Become a Member</a>
+            <a href="#" class="cta-button cta-secondary">Book a Tasting</a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <div class="newsletter" id="newsletter">
+        <h3>Stay Steeped in Tradition</h3>
+        <p>Subscribe to our newsletter for exclusive offers, tea wisdom, and invitations to special events.</p>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo"><i class="fas fa-mug-hot"></i> Chai Nirvana</div>
+                <p>Elevating the tea experience through tradition, innovation, and uncompromising quality since 2010.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-x"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#products">Collections</a></li>
+                    <li><a href="#featured">Master's Reserve</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-heading">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Tea Subscription</a></li>
+                    <li><a href="#">Private Blending</a></li>
+                    <li><a href="#">Corporate Gifting</a></li>
+                    <li><a href="#">Tea Ceremonies</a></li>
+                    <li><a href="#">Wholesale Inquiry</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 class="footer-heading">Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Spice Lane, Mumbai, India</p>
+                <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+                <p><i class="fas fa-envelope"></i> namaste@chainirvana.com</p>
+                <p><i class="fas fa-clock"></i> Daily: 7AM - 10PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Chai Nirvana. All Rights Reserved. | Crafted with <i class="fas fa-heart" style="color: var(--accent);"></i> by <span class="tea-scroller">
+                    <span class="tea-words">
+                        <span style="display: block;">Tea Measter</span>
+                        <span style="display: block;">Tea Perk</span>
+                        <span style="display: block;">Tea spot</span>
+                        <span style="display: block;">Tea Devil</span>
+                        <span style="display: block;">Tea Mad</span>
+                        <span style="display: block;">Tea Measter</span> <!-- For smooth looping -->
+                    </span>
+                </span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta" id="floatingCta">
+        <div class="floating-btn" id="floatingWhatsapp">
+            <i class="fab fa-whatsapp" id="WhatsApp"></i>
+            <span class="tooltip">Chat with us</span>
+        </div>
+        <div class="floating-btn" id="floatingCart">
+            <i class="fas fa-shopping-cart" id="ViewCart"></i>
+            <span class="tooltip">View cart</span>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="styles/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollSmoother.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Chai Nirvana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="styles/images/Ico.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/cart.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo"><i class="fas fa-mug-hot"></i> Chai Nirvana</a>
+        <a href="index.html" class="continue-shopping">Continue Shopping</a>
+    </header>
+
+    <!-- Cart Content -->
+    <div class="cart-container">
+        <h1 class="cart-title">Your Tea Selection</h1>
+        
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be inserted here by JavaScript -->
+        </div>
+        
+        <div class="cart-summary" id="cartSummary">
+            <h2 class="summary-title">Order Summary</h2>
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal">₹0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>Free</span>
+            </div>
+            <div class="summary-row summary-total">
+                <span>Total</span>
+                <span id="total">₹0.00</span>
+            </div>
+            <button class="checkout-btn" id="proceedToCheckout">Proceed to Checkout</button>
+        </div>
+    </div>
+    <script src="styles/js/cart.js"></script>  
+</body>
+</html>
