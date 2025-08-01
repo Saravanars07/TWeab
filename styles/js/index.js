@@ -7,6 +7,12 @@ const cartCountElements = document.querySelectorAll('.cart-count');
 // Add preloader-active class to html element initially
 document.documentElement.classList.add('preloader-active');
 
+//when user press or click refeash or close the page, scroll to top
+// This ensures the page always starts at the top when reloaded or closed
+window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
+};
+
 // =====================
 // Initialization
 // =====================
